@@ -946,23 +946,6 @@
       animation: waRing 2.6s ease-out infinite;
     }
     @keyframes waRing { 0%{opacity:.55;transform:scale(1)} 100%{opacity:0;transform:scale(1.6)} }
-
-    @media (hover: none) {
-  /* Serviços: desativa hover no touch */
-  .service-card:hover {
-    transform: none;
-    box-shadow: none;
-    border-color: var(--brand-100);
-  }
-  .service-card:hover::before { opacity: 0; }
-  .service-card:hover .sc-icon { background: var(--brand-100); color: var(--brand-600); }
-  .service-card:hover .sc-title { color: hsl(var(--p-h),8%,16%); }
-  .service-card:hover .sc-desc  { color: hsl(var(--p-h),6%,46%); }
-
-  /* Acervo: desativa hover padrão, ativa só com classe .is-tapped */
-  .acervo-item:hover { background: var(--brand-50); border-color: var(--brand-100); transform: none; }
-  .acervo-item.is-tapped { background: var(--brand-100); border-color: var(--brand-300); }
-}
   </style>
 </head>
 <body>
@@ -975,18 +958,6 @@
   <div id="loaderBfly" style="position:absolute;inset:0;pointer-events:none;"></div>
 </div>
 <script>
-  // Acervo: ativa efeito só no tap (mobile)
-    if (window.matchMedia('(hover: none)').matches) {
-      document.querySelectorAll('.acervo-item').forEach(function (item) {
-        item.addEventListener('click', function () {
-          document.querySelectorAll('.acervo-item').forEach(function (i) {
-            i.classList.remove('is-tapped');
-          });
-          item.classList.add('is-tapped');
-        });
-      });
-    }
-    
   (function(){
     window.addEventListener('load',function(){
       setTimeout(function(){ document.getElementById('loader').classList.add('hidden'); },2400);
