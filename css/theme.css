@@ -1,0 +1,139 @@
+/* css/theme.css */
+
+:root {
+
+    /* --- TEMA PADRÃO (GREIGE/BEGE) --- */
+
+    
+
+    /* 1. PRINCIPAL (Cinza Quente) */
+
+    --p-h: 40;
+
+    --p-s: 12%;
+
+
+
+    /* 2. DESTAQUE (Ouro Velho) */
+
+    --s-h: 45;
+
+    --s-s: 50%;
+
+
+
+    /* --- FÓRMULAS (NÃO MEXER) --- */
+
+    --brand-50:  hsl(var(--p-h), var(--p-s), 98%);
+
+    --brand-100: hsl(var(--p-h), var(--p-s), 94%);
+
+    --brand-200: hsl(var(--p-h), var(--p-s), 86%);
+
+    --brand-300: hsl(var(--p-h), var(--p-s), 74%);
+
+    --brand-500: hsl(var(--p-h), var(--p-s), 50%);
+
+    --brand-600: hsl(var(--p-h), var(--p-s), 39%);
+
+    --brand-700: hsl(var(--p-h), var(--p-s), 30%);
+
+    --brand-900: hsl(var(--p-h), var(--p-s), 13%);
+
+
+
+    --accent-50:  hsl(var(--s-h), var(--s-s), 98%);
+
+    --accent-100: hsl(var(--s-h), var(--s-s), 96%);
+
+    --accent-200: hsl(var(--s-h), var(--s-s), 90%);
+
+    --accent-300: hsl(var(--s-h), var(--s-s), 80%);
+
+    --accent-500: hsl(var(--s-h), var(--s-s), 62%);
+
+    --accent-600: hsl(var(--s-h), var(--s-s), 50%);
+
+}
+
+/* Backgrounds */
+.bg-brand-50   { background-color: var(--brand-50) !important; }
+.bg-brand-100  { background-color: var(--brand-100) !important; }
+.bg-brand-200  { background-color: var(--brand-200) !important; }
+.bg-brand-600  { background-color: var(--brand-600) !important; }
+.bg-brand-700  { background-color: var(--brand-700) !important; }
+
+.bg-accent-50  { background-color: var(--accent-50) !important; }
+.bg-accent-100 { background-color: var(--accent-100) !important; }
+.bg-accent-200 { background-color: var(--accent-200) !important; }
+
+/* Textos */
+.text-brand-300 { color: var(--brand-300) !important; }
+.text-brand-600 { color: var(--brand-600) !important; }
+.text-brand-700 { color: var(--brand-700) !important; }
+.text-accent-600 { color: var(--accent-600) !important; }
+
+/* Bordas */
+.border-brand-200 { border-color: var(--brand-200) !important; }
+.border-brand-300 { border-color: var(--brand-300) !important; }
+.border-brand-600 { border-color: var(--brand-600) !important; }
+
+/* Transparências e Específicos */
+.bg-brand-100\/80 { background-color: hsla(var(--p-h), var(--p-s), 94%, 0.8) !important; }
+.bg-brand-600\/10 { background-color: hsla(var(--p-h), var(--p-s), 39%, 0.1) !important; }
+.bg-brand-600\/20 { background-color: hsla(var(--p-h), var(--p-s), 39%, 0.2) !important; }
+.bg-brand-600\/30 { background-color: hsla(var(--p-h), var(--p-s), 39%, 0.3) !important; }
+.bg-brand-500\/10 { background-color: hsla(var(--p-h), var(--p-s), 50%, 0.1) !important; }
+.bg-accent-500\/10 { background-color: hsla(var(--s-h), var(--s-s), 62%, 0.1) !important; }
+
+/* Gradientes - Aqui a mágica do "Verde para Azul" acontece */
+.from-brand-50  { --tw-gradient-from: var(--brand-50) !important; }
+.from-brand-100 { --tw-gradient-from: var(--brand-100) !important; }
+.from-brand-600 { --tw-gradient-from: var(--brand-600) !important; }
+
+.to-brand-50    { --tw-gradient-to: var(--brand-50) !important; }
+.to-brand-100   { --tw-gradient-to: var(--brand-100) !important; }
+.to-brand-900   { --tw-gradient-to: var(--brand-900) !important; }
+.to-accent-50   { --tw-gradient-to: var(--accent-50) !important; }
+.to-accent-500  { --tw-gradient-to: var(--accent-500) !important; }
+
+
+/* --- TRAVA DE IMAGEM (Mobile Friendly) --- */
+/* Força a imagem a ser um quadrado perfeito e foca no rosto */
+.img-quadrada {
+    aspect-ratio: 1 / 1 !important;       /* Trava largura = altura */
+    object-fit: cover !important;         /* Corta as bordas, não estica a pessoa */
+    object-position: top center !important; /* Foca no topo (rosto), evita cortar a cabeça */
+    height: auto !important;              /* Garante fluidez */
+}
+
+/* --- CORREÇÃO DE HOVER (Para Menu e Botões) --- */
+/* O Tailwind usa classes específicas para hover. Precisamos forçar elas também. */
+
+/* Texto ao passar o mouse (Menu Desktop e Mobile) */
+.hover\:text-brand-600:hover { 
+    color: var(--brand-600) !important; 
+}
+.hover\:text-brand-300:hover { 
+    color: var(--brand-300) !important; 
+}
+
+/* Fundo ao passar o mouse (Menu Mobile) */
+.hover\:bg-brand-50:hover { 
+    background-color: var(--brand-50) !important; 
+}
+
+/* Botão Principal (Fundo escuro ao passar o mouse) */
+.hover\:bg-brand-700:hover { 
+    background-color: var(--brand-700) !important; 
+}
+
+/* Borda do Botão "Saiba Mais" */
+.hover\:border-brand-300:hover { 
+    border-color: var(--brand-300) !important; 
+}
+
+/* Links do Rodapé */
+.hover\:text-brand-200:hover {
+    color: var(--brand-200) !important;
+}
