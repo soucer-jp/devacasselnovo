@@ -320,15 +320,19 @@
     .menu-toggle:hover { background: var(--brand-100); color: var(--brand-700); }
     @media (min-width: 1024px) { .menu-toggle { display: none; } }
 
-    /* Mobile nav drawer */
+    /* Mobile nav drawer — sobrepõe o hero */
     #mobile-nav {
       max-height: 0; overflow: hidden;
-      background: rgba(252, 249, 245, 0.97);
-      backdrop-filter: blur(20px);
-      border-top: 1px solid hsl(var(--p-h), 12%, 91%);
+      background: rgba(252, 249, 245, 0.98);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      border-bottom: 1px solid hsl(var(--p-h), 12%, 88%);
       transition: max-height 0.42s var(--ease-smooth);
+      position: fixed; top: 68px; left: 0; right: 0;
+      z-index: 490;
+      box-shadow: 0 16px 48px hsla(var(--p-h), 20%, 15%, 0.15);
     }
-    #mobile-nav.is-open { max-height: 400px; }
+    #mobile-nav.is-open { max-height: 420px; }
     .mobile-nav-inner {
       padding: 1rem 1.5rem 1.5rem;
       display: flex; flex-direction: column; gap: 2px;
@@ -456,6 +460,31 @@
 
     .hero-photo-wrap { position: relative; max-width: 400px; margin-inline: auto; }
 
+    /* "PSICÓLOGA CLÍNICA" sempre centrado acima da foto */
+    .photo-label {
+      display: block; text-align: center;
+      margin-bottom: 0.85rem;
+      font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--brand-600);
+    }
+
+    /* Mobile: centralizar todo o bloco de texto do hero */
+    @media (max-width: 1023px) {
+      .hero-text-col {
+        text-align: center;
+      }
+      .hero-text-col .hero-sub {
+        margin-inline: auto;
+      }
+      .hero-text-col .hero-cta-row {
+        justify-content: center;
+      }
+      .hero-text-col .trust-row {
+        justify-content: center;
+      }
+    }
+
     .photo-orbit {
       position: absolute; inset: -18px; border-radius: 28px;
       border: 1.5px dashed hsla(var(--p-h), 25%, 65%, 0.45);
@@ -471,13 +500,6 @@
       background: var(--brand-100);
     }
     .photo-card img { aspect-ratio: 1; object-fit: cover; object-position: top center; }
-
-    .photo-label {
-      text-align: center; margin-bottom: 0.85rem;
-      font-size: 0.62rem; font-weight: 700;
-      letter-spacing: 0.24em; text-transform: uppercase;
-      color: var(--brand-600);
-    }
 
     .photo-badge-float {
       position: absolute; bottom: -16px; left: 50%;
@@ -952,13 +974,8 @@
   <div class="container">
     <div class="header-inner">
 
-      <!-- Logo -->
+      <!-- Logo — somente texto -->
       <a href="#inicio" class="logo" aria-label="Ir para o início">
-        <div class="logo-mark">
-          <svg style="width:22px;height:22px;color:var(--brand-600)" xmlns="http://www.w3.org/2000/svg" viewBox="40 0 400 400" fill="currentColor" aria-hidden="true">
-            <path d="m217.79 169.05q25.199 0 38.169-8.5231 13.155-8.5231 17.416-20.752 4.4448-12.229 5.7425-40.763 1.2972-31.684 14.082-47.062 12.97-15.564 42.43-15.564v7.0409q-10.561 0.74103-14.452 8.3378-3.705 7.4114-3.705 31.684 0 35.575-7.5966 55.03-7.4111 19.27-30.016 31.313-22.605 12.043-62.071 12.97v58.735q0 21.678 2.4074 28.163 2.5953 6.2997 10.561 10.191 8.1528 3.8911 25.014 3.8911v6.8556h-111.54v-6.8556q16.49-0.18797 24.458-3.5206 8.1526-3.5206 10.747-10.006 2.7772-6.6702 2.7772-28.719v-58.735q-39.836-0.9259-61.885-12.785-22.049-11.858-30.016-30.943-7.7816-19.27-7.7816-55.771 0-23.346-3.5229-30.943-3.5229-7.7821-14.637-8.8938v-7.0408q18.714 0.36974 30.201 5.9292 11.488 5.5585 18.343 19.64 7.0408 14.082 7.9673 37.057 1.2972 28.349 5.3724 40.577 4.2629 12.229 17.602 20.937 13.341 8.5231 38.354 8.5231v-80.784q0-21.678-2.5953-27.978-2.4074-6.485-10.376-10.191-7.9671-3.7055-25.014-3.891v-6.8556h111.54v6.8556q-17.046 0.18798-25.014 3.891-7.9671 3.5208-10.561 10.006-2.4074 6.4851-2.4074 28.163z"/>
-          </svg>
-        </div>
         <div class="logo-text">
           <div class="logo-name">Deva Cassel</div>
           <div class="logo-role">Psicóloga Clínica · CRP 77/99315</div>
@@ -1010,11 +1027,7 @@
     <div class="hero-grid">
 
       <!-- Text column -->
-      <div class="sr">
-        <div class="hero-badge">
-          <svg width="11" height="11" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/></svg>
-          Psicóloga Clínica · CRP 77/99315
-        </div>
+      <div class="sr hero-text-col">
 
         <h1 class="text-display-xl hero-title">
           Cuidar da mente é o primeiro passo para uma <em>vida leve</em>
@@ -1056,10 +1069,6 @@
           <div class="photo-orbit" aria-hidden="true"></div>
           <div class="photo-card">
             <img src="images/perfil1.webp" alt="Deva Cassel, Psicóloga Clínica" loading="eager" fetchpriority="high">
-          </div>
-          <div class="photo-badge-float">
-            <div class="badge-pulse-dot" aria-hidden="true"></div>
-            <span class="badge-text">Disponível para consultas</span>
           </div>
         </div>
       </div>
@@ -1104,8 +1113,8 @@
 
           <div class="sobre-quote-block">
             <p class="sobre-quote">"A terapia não é sobre ter respostas — é sobre descobrir as perguntas certas para a sua vida."</p>
-            <a href="#contato" class="btn btn-primary">
-              <svg width="13" height="13" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            <a href="#contato" class="btn btn-primary" style="padding:0.8rem 1.6rem;font-size:0.9rem;">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" style="flex-shrink:0;"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
               Quero começar minha jornada
             </a>
           </div>
