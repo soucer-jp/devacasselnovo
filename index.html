@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="__variable_c393a4">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,33 +7,64 @@
   <!-- ── Stylesheets ── -->
   <link rel="stylesheet" href="css/50f0c7862653ee97.css" data-precedence="next">
   <link rel="stylesheet" href="css/theme.css">
+  <style id="dynamic-theme-colors"> :root {
+
+    /* ── TEMA: PRATA MINIMALISTA ── */
+    /* Sobriedade, clareza mental e modernidade profissional em tons acinzentados */
+
+    --p-h: 210;
+    --p-s: 14%;
+    --s-h: 210;
+    --s-s: 25%;
+
+    /* Fórmulas — não alterar */
+    --brand-50:  hsl(var(--p-h), var(--p-s), 98%);
+    --brand-100: hsl(var(--p-h), var(--p-s), 94%);
+    --brand-200: hsl(var(--p-h), var(--p-s), 86%);
+    --brand-300: hsl(var(--p-h), var(--p-s), 74%);
+    --brand-400: hsl(var(--p-h), var(--p-s), 62%);
+    --brand-500: hsl(var(--p-h), var(--p-s), 50%);
+    --brand-600: hsl(var(--p-h), var(--p-s), 39%);
+    --brand-700: hsl(var(--p-h), var(--p-s), 30%);
+    --brand-800: hsl(var(--p-h), var(--p-s), 20%);
+    --brand-900: hsl(var(--p-h), var(--p-s), 13%);
+
+    --accent-50:  hsl(var(--s-h), var(--s-s), 98%);
+    --accent-100: hsl(var(--s-h), var(--s-s), 96%);
+    --accent-200: hsl(var(--s-h), var(--s-s), 90%);
+    --accent-300: hsl(var(--s-h), var(--s-s), 80%);
+    --accent-500: hsl(var(--s-h), var(--s-s), 62%);
+    --accent-600: hsl(var(--s-h), var(--s-s), 50%);
+} </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
 
   <!-- ── SEO ── -->
-  <title>Deva Cassel · Psicóloga Clínica</title>
-  <meta name="description" content="Psicóloga clínica com atendimento humanizado e sem julgamentos. Sessões online e presenciais. CRP 77/99315.">
+  <title>Psicóloga Deva Cassel</title>
+  <meta name="description" content="Atendimento psicológico com acolhimento e empatia. Sessões online e presenciais.">
   <meta name="author" content="Deva Cassel">
-  <meta name="keywords" content="psicóloga,psicoterapia,terapia online,saúde mental,acolhimento,ansiedade">
+  <meta name="keywords" content="psicóloga,psicoterapia,terapia online,saúde mental,acolhimento">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://psidevacasselnovo.vercel.app">
-  <meta property="og:title" content="Deva Cassel · Psicóloga Clínica">
-  <meta property="og:description" content="Atendimento psicológico humanizado e sem julgamentos. Sessões online e presenciais.">
-  <meta property="og:url" content="https://psidevacasselnovo.vercel.app">
-  <meta property="og:site_name" content="Deva Cassel — Psicóloga">
+  <link rel="canonical" href="https://psidevacassel.vercel.app">
+  <meta property="og:title" content="Psicóloga Deva Cassel">
+  <meta property="og:description" content="Atendimento psicológico com acolhimento e empatia. Sessões online e presenciais.">
+  <meta property="og:url" content="https://psidevacassel.vercel.app">
+  <meta property="og:site_name" content="Deva Cassel - Psicóloga">
   <meta property="og:locale" content="pt-BR">
-  <meta property="og:image" content="https://psidevacasselnovo.vercel.app/images/mockup.webp">
-  <meta property="og:image:alt" content="Deva Cassel — Psicóloga Clínica">
+  <meta property="og:image" content="https://psidevacassel.vercel.app/images/perfil1.webp">
+  <meta property="og:image:alt" content="Deva Cassel - Psicóloga Clínica">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Deva Cassel · Psicóloga Clínica">
-  <meta name="twitter:description" content="Atendimento psicológico humanizado. Sessões online e presenciais.">
-  <meta name="twitter:image" content="https://psidevacasselnovo.vercel.app/images/mockup.webp">
+  <meta name="twitter:title" content="Psicóloga Deva Cassel">
+  <meta name="twitter:description" content="Atendimento psicológico com acolhimento e empatia. Sessões online e presenciais.">
+  <meta name="twitter:image" content="https://psidevacassel.vercel.app/perfil1.webp">
   <link rel="icon" href="images/perfil1.webp">
+  <meta name="next-size-adjust">
 
   <!-- ── Lucide Icons ── -->
   <script src="https://unpkg.com/lucide@latest" defer></script>
@@ -43,35 +74,26 @@
     /* ══════════════════════════════════════
        DESIGN TOKENS
     ══════════════════════════════════════ */
-   :root {
+    :root {
+   
+      --brand-50:  hsl(var(--p-h), var(--p-s), 98%);
+      --brand-100: hsl(var(--p-h), var(--p-s), 94%);
+      --brand-200: hsl(var(--p-h), var(--p-s), 86%);
+      --brand-300: hsl(var(--p-h), var(--p-s), 74%);
+      --brand-400: hsl(var(--p-h), var(--p-s), 62%);
+      --brand-500: hsl(var(--p-h), var(--p-s), 50%);
+      --brand-600: hsl(var(--p-h), var(--p-s), 39%);
+      --brand-700: hsl(var(--p-h), var(--p-s), 30%);
+      --brand-800: hsl(var(--p-h), var(--p-s), 20%);
+      --brand-900: hsl(var(--p-h), var(--p-s), 13%);
 
-    /* ── TEMA: TERRACOTA ENRAIZADO ── */
-    /* Enraizamento, força e acolhimento em tons de barro e argila */
+      --accent-50:  hsl(var(--s-h), var(--s-s), 98%);
+      --accent-100: hsl(var(--s-h), var(--s-s), 96%);
+      --accent-200: hsl(var(--s-h), var(--s-s), 90%);
+      --accent-300: hsl(var(--s-h), var(--s-s), 80%);
+      --accent-500: hsl(var(--s-h), var(--s-s), 62%);
+      --accent-600: hsl(var(--s-h), var(--s-s), 50%);
 
-    --p-h: 25;
-    --p-s: 25%;
-    --s-h: 25;
-    --s-s: 45%;
-
-    /* Fórmulas — não alterar */
-    --brand-50:  hsl(var(--p-h), var(--p-s), 98%);
-    --brand-100: hsl(var(--p-h), var(--p-s), 94%);
-    --brand-200: hsl(var(--p-h), var(--p-s), 86%);
-    --brand-300: hsl(var(--p-h), var(--p-s), 74%);
-    --brand-400: hsl(var(--p-h), var(--p-s), 62%);
-    --brand-500: hsl(var(--p-h), var(--p-s), 50%);
-    --brand-600: hsl(var(--p-h), var(--p-s), 39%);
-    --brand-700: hsl(var(--p-h), var(--p-s), 30%);
-    --brand-800: hsl(var(--p-h), var(--p-s), 20%);
-    --brand-900: hsl(var(--p-h), var(--p-s), 13%);
-
-    --accent-50:  hsl(var(--s-h), var(--s-s), 98%);
-    --accent-100: hsl(var(--s-h), var(--s-s), 96%);
-    --accent-200: hsl(var(--s-h), var(--s-s), 90%);
-    --accent-300: hsl(var(--s-h), var(--s-s), 80%);
-    --accent-500: hsl(var(--s-h), var(--s-s), 62%);
-    --accent-600: hsl(var(--s-h), var(--s-s), 50%);
-}
       /* Typography */
       --font-display: 'Cormorant Garamond', Georgia, serif;
       --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
@@ -442,7 +464,7 @@
     }
 
     .hero-title { color: hsl(var(--p-h), 8%, 12%); margin-bottom: 1.25rem; }
-    .hero-title em { color: var(--brand-600); font-style: italic; }
+    .hero-title .text-brand-600 { color: var(--brand-600); font-style: italic; font-family: var(--font-display); }
 
     .hero-sub {
       font-size: clamp(1rem, 1.8vw, 1.1rem);
@@ -960,7 +982,7 @@
 <div id="loader">
   <div class="loader-name">Deva Cassel</div>
   <div class="loader-line"></div>
-  <div class="loader-sub">Psicóloga Clínica</div>
+  <div class="loader-sub">PSICÓLOGA CLÍNICA</div>
   <div id="loaderBfly" style="position:absolute;inset:0;pointer-events:none;"></div>
 </div>
 <script>
@@ -990,7 +1012,7 @@
   })();
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Deva Cassel — Psicóloga","url":"https://psidevacassel.vercel.app","image":"https://psidevacassel.vercel.app/images/perfil1.webp","description":"Atendimento psicológico humanizado, com sessões online e presenciais.","telephone":"(77) 99934-0546","address":{"@type":"PostalAddress","addressCountry":"BR"},"areaServed":"BR"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Deva Cassel - Psicóloga","url":"https://psidevacassel.vercel.app","image":"https://psidevacassel.vercel.app/perfil1.webp","description":"Atendimento psicológico humanizado, com sessões online e presenciais. Acolhimento e autoconhecimento.","telephone":"(77) 99934-0546","address":{"@type":"PostalAddress","addressCountry":"BR"},"areaServed":"BR"}</script>
 
 <!-- ═══════════ HEADER ═══════════ -->
 <header class="site-header" id="site-header">
@@ -1000,8 +1022,9 @@
       <!-- Logo — somente texto -->
       <a href="#inicio" class="logo" aria-label="Ir para o início">
         <div class="logo-text">
-          <div class="logo-name">Deva Cassel</div>
-          <div class="logo-role">Psicóloga Clínica · CRP 77/99315</div>
+          <div id="header-nome" class="logo-name">Deva Cassel</div>
+          <div class="logo-role">Psicóloga <span id="header-tipo">Clínica</span> · CRP <span id="hero-crp">77/99315</span>
+          </div>
         </div>
       </a>
 
@@ -1058,12 +1081,12 @@
       <!-- Text column -->
       <div class="sr hero-text-col">
 
-        <h1 class="text-display-xl hero-title">
-          Cuidar da mente é o primeiro passo para uma <em>vida leve</em>
+        <h1 id="hero-titulo" class="text-display-xl hero-title">
+          Cuidar da mente é o primeiro passo para uma <span class="text-brand-600">vida leve</span>
         </h1>
 
-        <p class="hero-sub">
-          Um espaço sem julgamentos para você se expressar, se entender e transformar padrões que limitam sua vida.
+        <p id="hero-subtitulo" class="hero-sub">
+          Atendimento psicológico humanizado, focado em acolhimento, autoconhecimento e bem-estar emocional.
           <strong>Sessões online e presenciais.</strong>
         </p>
 
@@ -1094,11 +1117,11 @@
       <!-- Photo column -->
       <div class="hero-photo-col sr sr--d2">
         <div class="hero-photo-wrap">
-          <div class="photo-label eyebrow">Psicóloga Clínica</div>
+          <div class="photo-label eyebrow">PSICÓLOGA <span id="hero-tipo">CLÍNICA</span></div>
           <div class="photo-orbit" aria-hidden="true"></div>
           <div style="position:relative;">
             <div class="photo-card">
-              <img src="images/perfil1.webp" alt="Deva Cassel, Psicóloga Clínica" loading="eager" fetchpriority="high">
+              <img id="hero-img" src="images/perfil1.webp" alt="Deva Cassel" loading="eager" fetchpriority="high">
             </div>
             <div style="position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.6);border-radius:999px;padding:0.55rem 1.1rem;display:flex;align-items:center;gap:0.5rem;white-space:nowrap;box-shadow:0 8px 28px hsla(0,0%,0%,0.1);">
               <div style="width:8px;height:8px;background:#22c55e;border-radius:50%;flex-shrink:0;box-shadow:0 0 0 0 rgba(34,197,94,0.4);animation:pulseRing 2s ease-out infinite;"></div>
@@ -1118,7 +1141,7 @@
 
     <div class="section-header sr">
       <p class="eyebrow"><span class="eyebrow-dot"></span>Quem sou eu<span class="eyebrow-dot"></span></p>
-      <h2 class="text-display-lg section-title">Conheça a <span style="color:var(--brand-600)">Deva Cassel</span></h2>
+      <h2 class="text-display-lg section-title">Conheça a <span id="sobre-titulo-nome" style="color:var(--brand-600)">Deva Cassel</span></h2>
       <div class="section-rule"></div>
     </div>
 
@@ -1127,23 +1150,20 @@
 
         <div>
           <div class="sobre-photo-frame">
-            <img src="images/perfil2.webp" alt="Deva Belucci Cassel — Psicóloga" loading="lazy">
+            <img id="sobre-img" src="images/perfil2.webp" alt="Deva Belucci Cassel — Psicóloga" loading="lazy">
           </div>
         </div>
 
         <div>
           
-          <h3 class="text-display-md sobre-heading">Olá! Sou a <span>Deva Belucci Cassel</span></h3>
+          <h3 class="text-display-md sobre-heading">Olá! Sou a <span id="sobre-nome">Deva Belucci Cassel</span></h3>
 
-          <p class="sobre-text">
-            Formada pela <strong>Unifacig</strong>, construí minha prática em torno de uma certeza: cada pessoa merece um espaço real de escuta — sem pressa, sem julgamentos, no seu ritmo.
-          </p>
-          <p class="sobre-text">
-            Trabalho com uma abordagem integrativa para ajudá-la a superar bloqueios emocionais, fortalecer relacionamentos e construir uma vida com mais sentido e equilíbrio.
+          <p id="sobre-texto" class="sobre-text">
+            Sou apaixonada por psicologia e formada pela <strong class="font-bold text-inherit">Unifacig</strong>. Como psicóloga clínica, minha missão é ajudar as pessoas a superarem desafios emocionais e a alcançarem uma vida plena.
           </p>
 
           <div class="sobre-quote-block">
-            <p class="sobre-quote">"A terapia não é sobre ter respostas — é sobre descobrir as perguntas certas para a sua vida."</p>
+            <p class="sobre-quote">Vamos juntos explorar os caminhos que levarão ao seu bem-estar emocional e mental.</p>
             <a href="#contato" class="btn btn-primary" style="padding:0.8rem 1.6rem;font-size:0.9rem;">
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink:0;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               Quero começar minha jornada
@@ -1153,16 +1173,18 @@
           <div class="sobre-stats">
             <div class="stat-chip">
               <div class="stat-label">CRP</div>
-              <div class="stat-sub">77/99315</div>
+              <div id="sobre-crp" class="stat-sub">77/99315</div>
             </div>
             <div class="stat-chip" style="border-color:#bbf7d0;">
               <div class="stat-label" style="color:#16a34a;">Online</div>
               <div class="stat-sub">Disponível</div>
             </div>
+            
             <div class="stat-chip" style="border-color:var(--accent-200);">
               <div class="stat-label" style="color:var(--accent-600);">Presencial</div>
               <div class="stat-sub">Disponível</div>
             </div>
+            
           </div>
         </div>
 
@@ -1239,6 +1261,7 @@
 
         <div>
           <label class="form-label">Como prefere ser atendida?</label>
+          
           <div class="modality-grid" id="modalidade-container">
             <button type="button" class="modalidade-btn" data-value="online">
               <i data-lucide="laptop" style="width:20px;height:20px;" aria-hidden="true"></i>
@@ -1250,6 +1273,7 @@
             </button>
           </div>
           <div id="descricao-modalidade" role="status" aria-live="polite"></div>
+          
         </div>
 
         <button type="submit" class="btn-submit" id="submit-btn">
@@ -1263,6 +1287,7 @@
 </section>
 
 <!-- ═══════════ ACERVO ═══════════ -->
+
 <section id="extras" class="section-pad">
   <div class="container">
 
@@ -1273,44 +1298,47 @@
       <div class="section-rule"></div>
     </div>
 
-    <div class="acervo-list">
+    <div id="acervo-lista-site" class="acervo-list">
 
+      
       <a href="https://google.com" target="_blank" rel="noopener" class="acervo-item sr">
-        <div class="ai-left">
-          <div class="ai-icon-box"><i data-lucide="book-heart" style="width:20px;height:20px;" aria-hidden="true"></i></div>
-          <div>
-            <div class="ai-title">Caderno de Atividades</div>
-            <div class="ai-desc">Guia de apoio emocional para o puerpério</div>
-          </div>
-        </div>
-        <i data-lucide="chevron-right" class="ai-arrow" style="width:18px;height:18px;" aria-hidden="true"></i>
-      </a>
-
-      <a href="https://google.com" target="_blank" rel="noopener" class="acervo-item sr sr--d1">
         <div class="ai-left">
           <div class="ai-icon-box"><i data-lucide="layers" style="width:20px;height:20px;" aria-hidden="true"></i></div>
           <div>
             <div class="ai-title">Baralho Terapêutico</div>
-            <div class="ai-desc">Cartas sistêmicas para insights e reflexão</div>
+            <div class="ai-desc">Cartas sistêmicas para insights</div>
           </div>
         </div>
         <i data-lucide="chevron-right" class="ai-arrow" style="width:18px;height:18px;" aria-hidden="true"></i>
       </a>
-
-      <a href="https://google.com" target="_blank" rel="noopener" class="acervo-item sr sr--d2">
+      
+      <a href="https://google.com" target="_blank" rel="noopener" class="acervo-item sr">
         <div class="ai-left">
           <div class="ai-icon-box"><i data-lucide="users" style="width:20px;height:20px;" aria-hidden="true"></i></div>
           <div>
             <div class="ai-title">Comunidade VIP</div>
-            <div class="ai-desc">Grupo de mentoria e suporte no WhatsApp</div>
+            <div class="ai-desc">Grupo de mentoria no WhatsApp</div>
           </div>
         </div>
         <i data-lucide="chevron-right" class="ai-arrow" style="width:18px;height:18px;" aria-hidden="true"></i>
       </a>
+      
+      <a href="youtube.com" target="_blank" rel="noopener" class="acervo-item sr">
+        <div class="ai-left">
+          <div class="ai-icon-box"><i data-lucide="youtube" style="width:20px;height:20px;" aria-hidden="true"></i></div>
+          <div>
+            <div class="ai-title">Canal youtube</div>
+            <div class="ai-desc">Venha me ver</div>
+          </div>
+        </div>
+        <i data-lucide="chevron-right" class="ai-arrow" style="width:18px;height:18px;" aria-hidden="true"></i>
+      </a>
+      
 
     </div>
   </div>
 </section>
+
 
 <!-- ═══════════ FAQ ═══════════ -->
 <section id="duvidas" class="section-pad">
@@ -1323,87 +1351,94 @@
       <div class="section-rule"></div>
     </div>
 
-    <div class="faq-panel sr sr--d1">
+    <div id="faq-lista-site" class="faq-panel sr sr--d1">
 
-      <!-- Q1 -->
+      
       <div class="faq-item">
         <button class="faq-toggle-btn" aria-expanded="false">
           <div class="faq-left">
             <span class="faq-ico"><i data-lucide="clock" style="width:18px;height:18px;" aria-hidden="true"></i></span>
-            <span class="faq-q">Como funcionam as sessões?</span>
+            <span id="faq-pergunta-0" class="faq-q">Como funcionam as sessões de psicoterapia?</span>
           </div>
           <div class="faq-plus" aria-hidden="true">
             <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
           </div>
         </button>
         <div class="faq-wrapper">
-          <div class="faq-answer">50 minutos de escuta genuína, no seu ritmo. Escolha entre videochamada segura ou atendimento presencial. Trabalhamos com foco nos seus objetivos, sem pressa.</div>
+          <div class="faq-answer">
+            <p id="faq-resposta-0">As sessões têm duração de 50 minutos e podem ser realizadas tanto online quanto presencialmente. Durante o atendimento, oferecemos um espaço seguro e acolhedor para você se expressar livremente, trabalhando em conjunto para alcançar seus objetivos terapêuticos.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Q2 -->
+      
       <div class="faq-item">
         <button class="faq-toggle-btn" aria-expanded="false">
           <div class="faq-left">
             <span class="faq-ico"><i data-lucide="credit-card" style="width:18px;height:18px;" aria-hidden="true"></i></span>
-            <span class="faq-q">Atende por convênio?</span>
+            <span id="faq-pergunta-1" class="faq-q">Atende por convênios médicos?</span>
           </div>
           <div class="faq-plus" aria-hidden="true">
             <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
           </div>
         </button>
         <div class="faq-wrapper">
-          <div class="faq-answer">O atendimento é particular, mas emito recibo para reembolso em alguns planos. Verifique com seu convênio a cobertura para consultas psicológicas particulares.</div>
+          <div class="faq-answer">
+            <p id="faq-resposta-1">Trabalho de forma particular, mas forneço recibo que pode ser utilizado para reembolso em alguns planos de saúde. Recomendo verificar com seu convênio sobre a cobertura para consultas psicológicas particulares.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Q3 -->
+      
       <div class="faq-item">
         <button class="faq-toggle-btn" aria-expanded="false">
           <div class="faq-left">
             <span class="faq-ico"><i data-lucide="calendar" style="width:18px;height:18px;" aria-hidden="true"></i></span>
-            <span class="faq-q">Como agendar uma consulta?</span>
+            <span id="faq-pergunta-2" class="faq-q">Como agendar uma consulta?</span>
           </div>
           <div class="faq-plus" aria-hidden="true">
             <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
           </div>
         </button>
         <div class="faq-wrapper">
-          <div class="faq-answer">Preencha o formulário acima ou me chame direto no WhatsApp. Respondo rápido e encontramos juntos um horário que funciona para você.</div>
+          <div class="faq-answer">
+            <p id="faq-resposta-2">Você pode agendar através do nosso formulário de contato no site ou entrando em contato diretamente pelo WhatsApp. Respondo rapidamente e podemos encontrar um horário que se adeque à sua agenda.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Q4 -->
+      
       <div class="faq-item">
         <button class="faq-toggle-btn" aria-expanded="false">
           <div class="faq-left">
             <span class="faq-ico"><i data-lucide="laptop" style="width:18px;height:18px;" aria-hidden="true"></i></span>
-            <span class="faq-q">O atendimento online é tão eficaz?</span>
+            <span id="faq-pergunta-3" class="faq-q">Atendimento online é tão eficaz quanto presencial?</span>
           </div>
           <div class="faq-plus" aria-hidden="true">
             <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
           </div>
         </button>
         <div class="faq-wrapper">
-          <div class="faq-answer">Sim. Pesquisas confirmam que a terapia online tem a mesma eficácia. Uso plataformas criptografadas e muitos pacientes relatam ainda mais abertura por estarem no próprio ambiente.</div>
+          <div class="faq-answer">
+            <p id="faq-resposta-3">Sim! O atendimento online tem se mostrado muito eficaz e oferece várias vantagens como maior comodidade e flexibilidade. Uso plataformas seguras e o ambiente virtual não compromete a qualidade do acolhimento e do processo terapêutico.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Q5 -->
+      
       <div class="faq-item">
         <button class="faq-toggle-btn" aria-expanded="false">
           <div class="faq-left">
             <span class="faq-ico"><i data-lucide="hourglass" style="width:18px;height:18px;" aria-hidden="true"></i></span>
-            <span class="faq-q">Quanto tempo dura o processo terapêutico?</span>
+            <span id="faq-pergunta-4" class="faq-q">Quanto tempo dura o processo terapêutico?</span>
           </div>
           <div class="faq-plus" aria-hidden="true">
             <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
           </div>
         </button>
         <div class="faq-wrapper">
-          <div class="faq-answer">Cada processo é único. Algumas demandas evoluem em meses; outras pedem acompanhamento mais longo. Avançamos sempre no seu ritmo, sem pressão.</div>
+          <div class="faq-answer">
+            <p id="faq-resposta-4">Cada processo é único e depende dos objetivos individuais de cada pessoa. Algumas questões podem ser trabalhadas em algumas sessões, enquanto outras podem necessitar de um acompanhamento mais longo. Respeitamos sempre o seu ritmo e necessidades.</p>
+          </div>
         </div>
       </div>
+      
 
     </div><!-- /faq-panel -->
 
@@ -1428,14 +1463,14 @@
       <div class="footer-grid">
 
         <div>
-          <div class="footer-brand-name">Deva Belucci Cassel</div>
-          <p class="footer-brand-desc">Suporte psicológico humanizado — cuidando da sua saúde mental com acolhimento e respeito ao seu ritmo.</p>
+          <div id="footer-nome" class="footer-brand-name">Deva Belucci Cassel</div>
+          <p id="footer-texto" class="footer-brand-desc">Suporte psicológico especializado e humanizado. Cuidando da sua saúde mental e do seu bem-estar emocional de forma personalizada.</p>
           <div class="footer-status">
             <div class="footer-avail">
               <div style="width:7px;height:7px;background:#22c55e;border-radius:50%;flex-shrink:0;" aria-hidden="true"></div>
               Disponível para consultas
             </div>
-            <div class="footer-crp">CRP 77/99315</div>
+            <div id="footer-crp" class="footer-crp">CRP 77/99315</div>
           </div>
         </div>
 
@@ -1443,26 +1478,27 @@
           <div class="footer-heading">Redes sociais</div>
           <div style="display:flex;flex-direction:column;gap:2px;">
 
-            <a href="https://wa.me/77999340546" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-social-link--wa">
+            <a id="btn-zap-footer" href="https://wa.me/77999340546" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-social-link--wa">
               <div class="footer-social-icon">
                 <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.687"/></svg>
               </div>
               <div>
                 <div class="footer-social-name">WhatsApp</div>
-                <div class="footer-social-handle">(77) 99934-0546</div>
+                <div id="footer-zap" class="footer-social-handle">(77) 99934-0546</div>
               </div>
             </a>
 
-            <a href="https://www.instagram.com/psidevacassel" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <a id="btn-insta-footer" href="https://www.instagram.com/psidevacassel" target="_blank" rel="noopener noreferrer" class="footer-social-link">
               <div class="footer-social-icon">
                 <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
               <div>
                 <div class="footer-social-name">Instagram</div>
-                <div class="footer-social-handle">@psidevacassel</div>
+                <div id="footer-insta" class="footer-social-handle">@psidevacassel</div>
               </div>
             </a>
 
+            
             <a href="https://www.tiktok.com/@psidevacassel" target="_blank" rel="noopener noreferrer" class="footer-social-link">
               <div class="footer-social-icon">
                 <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
@@ -1472,6 +1508,7 @@
                 <div class="footer-social-handle">@psidevacassel</div>
               </div>
             </a>
+            
 
           </div>
         </div>
@@ -1479,7 +1516,7 @@
       </div><!-- /footer-grid -->
 
       <div class="footer-bottom">
-        <p class="footer-copy">© <span id="ano-atual"></span> Deva Belucci Cassel. Todos os direitos reservados.</p>
+        <p class="footer-copy">© <span id="ano-atual"></span> <span id="footer-copy-nome">Deva Belucci Cassel</span>. Todos os direitos reservados.</p>
         <p class="footer-tag">Feito com cuidado para cuidar de você.</p>
       </div>
     </div>
@@ -1494,7 +1531,7 @@
 <!-- ═══════════ SCRIPTS ═══════════ -->
 <script>
   // Init Lucide
-  document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('load', function() {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   });
 
@@ -1590,7 +1627,8 @@
 
     var nameInput = document.getElementById('name');
     var descDiv   = document.getElementById('descricao-modalidade');
-    var selected  = '';
+    var modoFixo  = document.getElementById('modo-fixo');
+    var selected  = modoFixo ? modoFixo.value : '';
 
     form.querySelectorAll('.modalidade-btn').forEach(function(btn){
       btn.addEventListener('click', function(){
@@ -1602,8 +1640,7 @@
           online:     '<strong>Ótima escolha!</strong> Sessão por videochamada — no conforto da sua casa.',
           presencial: '<strong>Perfeito!</strong> Atendimento presencial no consultório.'
         };
-        descDiv.innerHTML = msgs[selected] || '';
-        descDiv.classList.add('is-visible');
+        if (descDiv) { descDiv.innerHTML = msgs[selected] || ''; descDiv.classList.add('is-visible'); }
       });
     });
 
@@ -1612,7 +1649,10 @@
       var nome = (nameInput.value || '').trim();
       if (!nome) { nameInput.focus(); nameInput.style.borderColor = 'tomato'; return; }
       nameInput.style.borderColor = '';
-      if (!selected) { descDiv.innerHTML = '<span style="color:tomato;">Por favor, selecione uma modalidade.</span>'; descDiv.classList.add('is-visible'); return; }
+      if (!selected) {
+        if (descDiv) { descDiv.innerHTML = '<span style="color:tomato;">Por favor, selecione uma modalidade.</span>'; descDiv.classList.add('is-visible'); }
+        return;
+      }
 
       var raw = form.getAttribute('data-whatsapp').replace(/\D/g,'');
       var num = (raw.length >= 10 && raw.length <= 11) ? '55' + raw : raw;
