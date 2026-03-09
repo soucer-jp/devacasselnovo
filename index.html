@@ -406,11 +406,22 @@
     }
 
     .hero-grid {
-      display: grid; gap: 3rem; align-items: center;
-      padding-block: clamp(2.5rem, 6vw, 5rem);
+      display: grid; gap: 2rem; align-items: center;
+      padding-block: clamp(1.25rem, 3vw, 2rem);
     }
     @media (min-width: 1024px) {
-      .hero-grid { grid-template-columns: 1fr 1fr; gap: 5rem; }
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 5rem; padding-block: clamp(1.5rem, 3vw, 2.5rem); }
+    }
+
+    /* Desktop: imagem hero maior */
+    @media (min-width: 1024px) {
+      .hero-photo-wrap { max-width: 540px; }
+    }
+
+    /* Desktop: trust chips na mesma linha sem quebrar */
+    @media (min-width: 1024px) {
+      .trust-row { flex-wrap: nowrap; gap: 0.5rem; }
+      .trust-chip { white-space: nowrap; font-size: 0.74rem; padding: 0.35rem 0.8rem; }
     }
 
     /* Hero text */
@@ -467,6 +478,11 @@
       font-size: 0.62rem; font-weight: 700;
       letter-spacing: 0.24em; text-transform: uppercase;
       color: var(--brand-600);
+    }
+
+    /* Mobile: espaço acima do "Psicóloga Clínica" = espaço abaixo dele (0.85rem) */
+    @media (max-width: 1023px) {
+      .hero-photo-col { padding-top: 0.3rem; }
     }
 
     /* Mobile: centralizar todo o bloco de texto do hero */
@@ -989,7 +1005,7 @@
         <a href="#servicos" class="nav-link">Serviços</a>
         <a href="#duvidas"  class="nav-link">Dúvidas</a>
         <a href="#contato" class="btn btn-primary" style="margin-left:.5rem;">
-          <svg width="13" height="13" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           Agendar consulta
         </a>
       </nav>
@@ -1040,7 +1056,7 @@
 
         <div class="hero-cta-row">
           <a href="#contato" class="btn btn-primary btn-primary--lg">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Agendar minha consulta
           </a>
           <a href="#sobre" class="btn btn-ghost btn-ghost--lg">Conheça meu trabalho</a>
@@ -1114,7 +1130,7 @@
           <div class="sobre-quote-block">
             <p class="sobre-quote">"A terapia não é sobre ter respostas — é sobre descobrir as perguntas certas para a sua vida."</p>
             <a href="#contato" class="btn btn-primary" style="padding:0.8rem 1.6rem;font-size:0.9rem;">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" style="flex-shrink:0;"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink:0;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               Quero começar minha jornada
             </a>
           </div>
